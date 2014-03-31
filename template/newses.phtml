@@ -1,0 +1,8 @@
+<?php if (!$newses): ?>
+	Żaden artykuł nie został jeszcze dodany.
+<?php else: ?>
+<?php foreach($newses as $news): ?>
+	<h2> <?php echo $news['header'] ?></h2>
+	<?php echo $news['content'] ?></h2>
+<?php endforeach; ?>
+<?php endif ?>
